@@ -250,108 +250,112 @@
         }
 
         /* Navigation */
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: rgb(60, 9, 108);
-            z-index: 1000;
-            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(5px);
-            transition: all 0.3s ease;
-        }
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary); /* AVANT: rgb(60, 9, 108) */
+    z-index: 1000;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
 
-        body.dark-mode nav {
-            background-color: rgba(37, 5, 67, 0.95);
-        }
+/* Dark mode */
+body.dark-mode nav {
+    background-color: rgba(42, 28, 20, 0.95); /* brun foncé */
+}
 
-        nav.scrolled {
-            background-color: rgba(60, 9, 108, 0.98);
-            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
-            padding: 0.5rem 0;
-        }
+nav.scrolled {
+    background-color: rgba(155, 123, 90, 0.98); /* brun chaud */
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+    padding: 0.5rem 0;
+}
 
-        body.dark-mode nav.scrolled {
-            background-color: rgba(37, 5, 67, 0.98);
-        }
+body.dark-mode nav.scrolled {
+    background-color: rgba(42, 28, 20, 0.98); /* brun très foncé */
+}
 
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.5rem 2rem;
-            transition: padding 0.3s ease;
-        }
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    transition: padding 0.3s ease;
+}
 
-        nav.scrolled .nav-container {
-            padding: 0.5rem 2rem;
-        }
-        .nav-img{
-            width: 120px;
-            height:65px;
-        }
-        .logo {
-            color: white;
-            font-weight: 700;
-            font-size: 1.5rem;
-            text-decoration: none;
-            transition: var(--transition);
-        }
+nav.scrolled .nav-container {
+    padding: 0.5rem 2rem;
+}
 
-        .logo:hover {
-            color: var(--accent);
-            transform: scale(1.05);
-        }
+.nav-img {
+    width: 120px;
+    height: 65px;
+}
 
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-        }
+.logo {
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: var(--transition);
+}
 
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            position: relative;
-            padding: 0.5rem 0;
-            transition: var(--transition);
-        }
+.logo:hover {
+    color: var(--accent); /* beige clair */
+    transform: scale(1.05);
+}
 
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background-color: var(--accent);
-            transition: width 0.3s ease;
-        }
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
 
-        .nav-links a:hover {
-            color: var(--accent);
-        }
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
+    transition: var(--transition);
+}
 
-        .nav-links a:hover::after {
-            width: 100%;
-        }
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent); /* beige clair */
+    transition: width 0.3s ease;
+}
 
-        /* Dark mode toggle */
-        .theme-toggle {
-            background: transparent;
-            border: none;
-            color: white;
-            font-size: 1.2rem;
-            cursor: pointer;
-            margin-left: 1rem;
-            transition: var(--transition);
-        }
+.nav-links a:hover {
+    color: var(--accent);
+}
 
-        .theme-toggle:hover {
-            color: var(--accent);
-            transform: scale(1.1);
-        }
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Dark mode toggle */
+.theme-toggle {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-left: 1rem;
+    transition: var(--transition);
+}
+
+.theme-toggle:hover {
+    color: var(--accent);
+    transform: scale(1.1);
+}
+
 
         /* Sections */
         section {
