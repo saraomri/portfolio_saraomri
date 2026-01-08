@@ -3,178 +3,615 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sara Omri | Portfolio</title>
+    <title>Sara Omri - Portfolio</title>
+    <link rel="icon" type="image/png" href="favicon.png">
 
-    <!-- Fonts & Icons -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Navigation -->
+    <nav id="mainNav">
+        <div class="nav-container container">
+            <a href="#" class="logo"><img src="./favicon.png" class="nav-img" ></a>
+            <div class="nav-right">
+                <div class="nav-links" id="navLinks">
+                    <a href="#accueil">Accueil</a>
+                    <a href="#about">À propos</a>
+                    <a href="#skills">Compétences</a>
+                    <a href="#experience">Expériences</a>
+                    <a href="#education">Formations</a>
+                    <a href="#contact">Contact</a>
 
-<!-- ================= NAVBAR ================= -->
-<nav id="mainNav">
-    <div class="nav-container container">
-        <a href="#" class="logo">SARA OMRI</a>
-        <div class="nav-links">
-            <a href="#about">À propos</a>
-            <a href="#skills">Compétences</a>
-            <a href="#experience">Expériences</a>
-            <a href="#education">Formations</a>
-            <a href="#contact">Contact</a>
-            <button class="theme-toggle" id="themeToggle">
-                <i class="fas fa-moon"></i>
-            </button>
+                  <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+
+               
+                </div>
+               
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
-<!-- ================= HEADER ================= -->
-<header id="accueil">
-    <div class="container hero-content">
+    <!-- Header avec particules -->
+   <header id="accueil">
+    <div class="particles" id="particles"></div>
+    <div class="hero-content container">
         <div class="profile-container">
-            <img src="img.png" alt="Sara Omri" class="profile-img">
+            <img src="./img.PNG" alt="Img Sara Omri" class="profile-img">
         </div>
 
         <h1>Sara Omri</h1>
-        <p class="subtitle">Développeuse Web Full Stack & Marketeuse Digitale</p>
+        <p class="subtitle">Développement Web Full Stack & Marketing Digital</p>
 
         <div class="header-contact">
             <div class="header-contact-item">
-                <i class="fas fa-phone"></i>
+                <i class="fas fa-phone header-contact-icon"></i>
                 <span>+212 697 058 819</span>
             </div>
             <div class="header-contact-item">
-                <i class="fas fa-envelope"></i>
+                <i class="fas fa-envelope header-contact-icon"></i>
                 <span>omrisara20031211@gmail.com</span>
             </div>
             <div class="header-contact-item">
-                <i class="fas fa-map-marker-alt"></i>
+                <i class="fas fa-map-marker-alt header-contact-icon"></i>
                 <span>Salé, Maroc</span>
             </div>
+
+            <!-- 🔵 LinkedIn ajouté -->
             <div class="header-contact-item">
-                <i class="fab fa-linkedin"></i>
-                <a href="https://www.linkedin.com/in/sara-omri-654a54253/" target="_blank">LinkedIn</a>
+                <i class="fab fa-linkedin header-contact-icon"></i>
+                <a href="https://www.linkedin.com/in/sara-omri-654a54253/" target="_blank" class="linkedin-link"><span>Sara Omri</span></a>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+        </div>
+</header>
+
+
+    <main class="container">
+        <!-- À propos -->
+        <section id="about">
+            <div class="section-title">
+                <h2>À Propos de Moi</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Développeuse Web Full Stack & Digital Marketer, diplômée en Développement Digital, je combine compétences techniques et stratégie digitale pour créer des solutions modernes, performantes et orientées résultats.</p>
+                    <p>Grâce à mon expérience en Front-end, Back-end et en marketing digital, j’allie technologie et créativité pour développer des sites web responsives, intuitifs et pensés pour la croissance.</p>
+                    <p>Curieuse, rigoureuse et passionnée par l’innovation, j’aime relever les défis, apprendre de nouvelles technologies et contribuer à des projets à fort impact.
+                     Je cherche aujourd’hui un environnement dynamique où je peux mettre à profit ma double expertise pour renforcer la performance technique et digitale des entreprises.</p>
+                </div>
+                
+                <!-- Nouvelle section pour les compétences -->
+                <div class="skills-section" id="skills">
+                    <div class="section-title">
+                        <h2>Mes Compétences</h2>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <h3><i class="fas fa-code skill-icon"></i> Compétences Techniques</h3>
+                            <ul class="skill-list">
+                                <li><i class="fab fa-html5"></i> <strong>Front-end:</strong> HTML5, CSS3, JavaScript, React</li>
+                                <li><i class="fab fa-php"></i> <strong>Back-end:</strong> PHP, Laravel, Node.js</li>
+                                <li><i class="fas fa-database"></i> <strong>Bases de données:</strong> MySQL, MongoDB</li>
+                                <li><i class="fas fa-tools"></i> <strong>Outils:</strong> Git, Docker, Webpack, Figma</li>
+                                <li><i class="fab fa-wordpress"></i> <strong>CMS:</strong> WordPress, Shopify</li>
+                            </ul>
+                            
+                            <div class="skill-bar-container">
+                                <div class="skill-info">
+                                    <div class="skill-name"><i class="fab fa-html5"></i> HTML/CSS</div>
+                                    <div class="skill-percent">90%</div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                                
+                                <div class="skill-info">
+                                    <div class="skill-name"><i class="fab fa-js"></i> JavaScript</div>
+                                    <div class="skill-percent">85%</div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                                
+                                <div class="skill-info">
+                                    <div class="skill-name"><i class="fab fa-react"></i> React</div>
+                                    <div class="skill-percent">80%</div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                                
+                                <div class="skill-info">
+                                    <div class="skill-name"><i class="fab fa-php"></i> PHP/Laravel</div>
+                                    <div class="skill-percent">75%</div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card">
+                            <h3><i class="fas fa-brain skill-icon"></i> Soft Skills</h3>
+                            <ul class="skill-list">
+                                <li><i class="fas fa-lightbulb"></i> Résolution de problèmes complexes</li>
+                                <li><i class="fas fa-project-diagram"></i> Agilité cognitive multi-domaines</li>
+                                <li><i class="fas fa-chalkboard-teacher"></i> Pédagogie technologique</li>
+                                <li><i class="fas fa-search"></i> Curiosité insatiable</li>
+                                <li><i class="fas fa-shield-alt"></i> Résilience opérationnelle</li>
+                                <li><i class="fas fa-ruler-combined"></i> Précision méthodique</li>
+                                <li><i class="fas fa-users"></i> Intelligence collaborative</li>
+                            </ul>
+                            
+                            <div class="skill-bar-container">
+                                <div class="skill-info">
+                                    <div class="skill-name"><i class="fas fa-lightbulb"></i> Résolution problèmes</div>
+                                    <div class="skill-percent">95%</div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%"></div>
+                                </div>
+                                
+                                <div class="skill-info">
+                                    <div class="skill-name"><i class="fas fa-users"></i> Travail d'équipe</div>
+                                    <div class="skill-percent">90%</div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                                
+                                <div class="skill-info">
+                                    <div class="skill-name"><i class="fas fa-comments"></i> Communication</div>
+                                    <div class="skill-percent">85%</div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                                
+                                <div class="skill-info">
+                                    <div class="skill-name"><i class="fas fa-clock"></i> Gestion du temps</div>
+                                    <div class="skill-percent">80%</div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card">
+                            <h3><i class="fas fa-language skill-icon"></i> Langues & Marketing</h3>
+                            <ul class="skill-list">
+                                <li><i class="fas fa-language"></i> <strong>Arabe:</strong> Langue maternelle</li>
+                                <li><i class="fas fa-language"></i> <strong>Français:</strong> Courant (C1)</li>
+                                <li><i class="fas fa-language"></i> <strong>Anglais:</strong> Professionnel (B2)</li>
+                                <li><i class="fas fa-bullhorn"></i> <strong>Marketing Digital:</strong> Email marketing, SEO, Analytics</li>
+                                <li><i class="fas fa-tools"></i> <strong>Outils:</strong> Mailchimp, Google Analytics, Ads</li>
+                            </ul>
+                            
+                            <div class="skill-bar-container">
+                                <div class="skill-info">
+                                    <div class="skill-name"><i class="fas fa-language"></i> Arabe</div>
+                                    <div class="skill-percent">100%</div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 100%"></div>
+                                </div>
+                                
+                                <div class="skill-info">
+                                    <div class="skill-name"><i class="fas fa-language"></i> Français</div>
+                                    <div class="skill-percent">90%</div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                                
+                                <div class="skill-info">
+                                    <div class="skill-name"><i class="fas fa-language"></i> Anglais</div>
+                                    <div class="skill-percent">75%</div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                                
+                                <div class="skill-info">
+                                    <div class="skill-name"><i class="fas fa-chart-line"></i> SEO/Analytics</div>
+                                    <div class="skill-percent">80%</div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expérience -->
+        <section id="experience">
+    <div class="section-title">
+        <h2>Expérience Professionnelle</h2>
+    </div>
+    <div class="experience-container">
+        <div class="experience-tabs">
+                        <button class="tab-btn" data-tab="marketingdev">Dec Engineering</button>
+                        <button class="tab-btn" data-tab="assistance">Olivraison</button>
+                        <button class="tab-btn" data-tab="agente">Recouvrement Facile</button>
+                        <button class="tab-btn" data-tab="marketing">Orffela</button>
+            <button class="tab-btn active" data-tab="web">Super Numérique Maroc</button>
+        </div>
+
+        <!-- Tous les tab-content sont au même niveau -->
+        <div class="tab-content active" id="web">
+            <div class="experience-item">
+                <div class="experience-date">Fév 2024 - Mai 2024</div>
+                <h3 class="experience-title">Développeuse Web Full Stack - Stagiaire</h3>
+                <div class="experience-company">Super Numérique Maroc - RABAT</div>
+                <ul class="experience-description">
+                    <li>Développement Front-end et Back-end d’un site web responsive conforme aux besoins du client.</li>
+                    <li>Optimisation du référencement naturel (SEO) et amélioration des performances techniques du site.</li>
+                    <li>Mise en place de fonctionnalités web, correction de bugs et tests avant déploiement.</li>
+                    <li>Collaboration avec l’équipe pour concevoir des solutions techniques adaptées.</li>
+                    <li>Participation au déploiement final du site et à la maintenance corrective.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tab-content" id="marketing">
+            <div class="experience-item">
+                <div class="experience-date">Déc 2024 - Avr 2025</div>
+                <h3 class="experience-title"> Spécialiste en Marketing Digital (Emaling) - Stagiaire</h3>
+                <div class="experience-company">Orffela - RABAT</div>
+                <ul class="experience-description">
+                    <li>Création et gestion complète de campagnes d'email marketing</li>
+                    <li>Rédaction de contenus attractifs et création d’éléments visuels pour maximiser l’engagement.</li>
+                    <li> Gestion et segmentation des bases de données clients.</li>
+                    <li>Suivi et analyse des performances des campagnes pour optimiser les résultats</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tab-content" id="marketingdev">
+            <div class="experience-item">
+                <div class="experience-date">Oct 2025</div>
+                <h3 class="experience-title">Développeuse Web & Spécialiste Marketing Digital - Stagiaire</h3>
+                <div class="experience-company">Dec Engineering - SALE</div>
+                <ul class="experience-description">
+                    <li> Création et développement du site web officiel de l’entreprise</li>
+                    <li>Mise en place et gestion des campagnes d’emailing pour la prospection et la fidélisation des clients</li>
+                    <li>Gestion et animation des réseaux sociaux de l’entreprise (Facebook, LinkedIn, Instagram…)</li>
+                    <li>Contribution à la stratégie digitale pour améliorer la visibilité en ligne et renforcer l’image de marque</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tab-content" id="agente">
+            <div class="experience-item">
+                <div class="experience-date">Mai 2025 - Juil 2025</div>
+                <h3 class="experience-title">Agent de Recouvrement - Stagiaire</h3>
+                <div class="experience-company">Recouvrement Facile - SALE</div>
+                <ul class="experience-description">
+                    <li>Gestion des dossiers clients et suivi des paiements</li>
+                    <li>Communication avec les clients et résolution de litiges</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tab-content" id="assistance">
+            <div class="experience-item">
+                <div class="experience-date">Aout 2024 - Sept 2025</div>
+                <h3 class="experience-title">Assistance Digitale - Stagiaire</h3>
+                <div class="experience-company">Olivraison - CASABLANCA</div>
+                <ul class="experience-description">
+                    <li>Support client et gestion des demandes</li>
+                    <li>Mise en place de process pour améliorer le service</li>
+                </ul>
             </div>
         </div>
     </div>
-</header>
-
-<main class="container">
-
-<!-- ================= ABOUT ================= -->
-<section id="about">
-    <div class="section-title">
-        <h2>À propos</h2>
-    </div>
-    <p>
-        Développeuse Web Full Stack & Marketeuse Digitale, j’allie compétences techniques et stratégie digitale
-        pour concevoir des solutions modernes, performantes et orientées résultats.
-    </p>
 </section>
 
-<!-- ================= SKILLS ================= -->
-<section id="skills">
-    <div class="section-title">
-        <h2>Compétences</h2>
-    </div>
+        <!-- Formations -->
+        <section id="education">
+            <div class="section-title">
+                <h2>Formations Académiques</h2>
+            </div>
+            <div class="education-container">
+                <div class="education-item">
+                    <div class="education-date">2022 - 2024</div>
+                    <h3 class="education-title">Diplôme en Développement Digital</h3>
+                    <div class="education-institution">Institut Spécialisé de Technologie Appliquée, Salé</div>
+                    <p>Option Web Full Stack : développement front-end & back-end, frameworks modernes et bases de données.</p>
+                </div>
+                
+                <div class="education-item">
+                    <div class="education-date">2021 - 2022</div>
+                    <h3 class="education-title">Licence en Physique Chimie (SMPC)</h3>
+                    <div class="education-institution">Faculté des Sciences, Rabat</div>
+                    <p>Première année validée avec mention avant réorientation vers l'informatique. Acquisition d'une méthodologie scientifique rigoureuse et de compétences en analyse.</p>
+                </div>
+                
+                <div class="education-item">
+                    <div class="education-date">2020 - 2021</div>
+                    <h3 class="education-title">Baccalauréat Sciences Expérimentales</h3>
+                    <div class="education-institution">Lycée Ahmed Chaouki</div>
+                    <p>Option Physique avec mention, base solide en raisonnement scientifique et mathématique. Participation active au club scientifique de l'établissement.</p>
+                </div>
+            </div>
+        </section>
 
-    <div class="skills-grid">
-        <div class="skill-card">
-            <h3>Développement Web</h3>
-            <ul>
-                <li>HTML5, CSS3, JavaScript</li>
-                <li>React, Next.js</li>
-                <li>PHP, Laravel, Node.js</li>
-                <li>MySQL, MongoDB</li>
-            </ul>
+        <!-- Contact -->
+        <section id="contact">
+            <div class="section-title">
+                <h2>Contactez-moi</h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon-container">
+                            <i class="fas fa-phone contact-icon"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Téléphone</h3>
+                            <a href="tel:+212697058819">+212 697 058 819</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon-container">
+                            <i class="fas fa-envelope contact-icon"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <a href="mailto:omrisara20031211@gmail.com">omrisara20031211@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon-container">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Adresse</h3>
+                            <p>Sect El Fath, Rue Arbaoua N°328, Laayayda, Salé, Maroc</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/sara-omri-654a54253/ " class="social-link" aria-label="LinkedIn" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/votreprofil" class="social-link" aria-label="GitHub" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.facebook.com/sara.omri.2003?locale=ar_AR" class="social-link" aria-label="Twitter" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/sara.omri.2003/?next=%2F" class="social-link" aria-label="Instagram" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+     <footer>
+        <div class="footer-content container">
+            <div class="footer-logo">SARA OMRI</div>
+            <p class="footer-text">
+                Merci de visiter mon portfolio professionnel. N'hésitez pas à me contacter pour discuter de projets ou opportunités.
+            </p>
+            
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/sara-omri-654a54253/ " aria-label="LinkedIn" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/votreprofil" aria-label="GitHub" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.facebook.com/sara.omri.2003?locale=ar_AR" aria-label="facebook" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/sara.omri.2003/?next=%2F" aria-label="Instagram" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#contact" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            
+            <p class="copyright">
+                &copy; 2025 Sara Omri. Tous droits réservés.
+            </p>
+            
+            <a href="#" class="back-to-top" id="backToTop">
+                <i class="fas fa-arrow-up"></i> Retour en haut
+            </a>
         </div>
+    </footer>
 
-        <div class="skill-card">
-            <h3>Marketing Digital</h3>
-            <ul>
-                <li>SEO & Analytics</li>
-                <li>Email Marketing</li>
-                <li>Branding & Contenu</li>
-                <li>Social Media</li>
-            </ul>
-        </div>
+    <script>
+       
 
-        <div class="skill-card">
-            <h3>Outils</h3>
-            <ul>
-                <li>Git & GitHub</li>
-                <li>Docker</li>
-                <li>Figma</li>
-                <li>Google Analytics</li>
-            </ul>
-        </div>
-    </div>
-</section>
+        // Tabs expérience
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
 
-<!-- ================= EXPERIENCE ================= -->
-<section id="experience">
-    <div class="section-title">
-        <h2>Expériences</h2>
-    </div>
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const tabId = btn.getAttribute('data-tab');
+                
+                tabBtns.forEach(b => b.classList.remove('active'));
+                tabContents.forEach(c => c.classList.remove('active'));
+                
+                btn.classList.add('active');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
 
-    <div class="experience-item">
-        <h3>Community Manager – Lenscape Creative Studio</h3>
-        <p>
-            Gestion de communautés digitales, création de contenus, animation des réseaux sociaux
-            et gestion de sites web.
-        </p>
-        <small>👉 Voir portfolio pour plus de détails</small>
-    </div>
-</section>
+        // Back to top
+        const backToTop = document.getElementById('backToTop');
 
-<!-- ================= EDUCATION ================= -->
-<section id="education">
-    <div class="section-title">
-        <h2>Formations</h2>
-    </div>
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTop.style.display = 'inline-block';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        });
 
-    <div class="education-item">
-        <h3>Développement Digital – Web Full Stack</h3>
-        <p>Institut Spécialisé de Technologie Appliquée, Salé</p>
-    </div>
-</section>
+        backToTop.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
 
-<!-- ================= CONTACT ================= -->
-<section id="contact">
-    <div class="section-title">
-        <h2>Contact</h2>
-    </div>
+        // Animation au scroll
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.experience-item, .education-item, .skill-card');
+            const windowHeight = window.innerHeight;
+            const triggerBottom = windowHeight * 0.85;
+            
+            elements.forEach(el => {
+                const elTop = el.getBoundingClientRect().top;
+                
+                if (elTop < triggerBottom) {
+                    el.classList.add('show');
+                }
+            });
+        };
 
-    <div class="contact-info">
-        <p><strong>Email :</strong> omrisara20031211@gmail.com</p>
-        <p><strong>Téléphone :</strong> +212 697 058 819</p>
-        <p><strong>LinkedIn :</strong> linkedin.com/in/sara-omri-654a54253</p>
-    </div>
-</section>
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
 
-</main>
+        // Animation de particules
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 30;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                
+                // Taille aléatoire entre 2px et 6px
+                const size = Math.random() * 4 + 2;
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                
+                // Position aléatoire
+                particle.style.left = `${Math.random() * 100}%`;
+                
+                // Animation duration aléatoire entre 10s et 20s
+                const duration = Math.random() * 10 + 10;
+                particle.style.animationDuration = `${duration}s`;
+                
+                // Délai aléatoire
+                particle.style.animationDelay = `${Math.random() * 10}s`;
+                
+                particlesContainer.appendChild(particle);
+            }
+        }
 
-<!-- ================= FOOTER ================= -->
-<footer>
-    <p>© 2025 Sara Omri — Tous droits réservés</p>
-</footer>
+        // Navbar scroll effect
+        const navbar = document.getElementById('mainNav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
 
-<!-- ================= SCRIPT ================= -->
-<script>
-    const themeToggle = document.getElementById("themeToggle");
-    themeToggle.addEventListener("click", () => {
-        document.body.classList.toggle("dark-mode");
-        themeToggle.innerHTML = document.body.classList.contains("dark-mode")
-            ? '<i class="fas fa-sun"></i>'
-            : '<i class="fas fa-moon"></i>';
+        // Dark mode toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            
+            if (body.classList.contains('dark-mode')) {
+                themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+
+        // Vérifier le mode au chargement
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            body.classList.add('dark-mode');
+            themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        }
+
+        // Initialisation des animations
+        document.addEventListener('DOMContentLoaded', () => {
+            createParticles();
+            
+            // Animation d'entrée pour le header
+            gsap.from('.profile-container', {
+                duration: 1.5,
+                y: 50,
+                opacity: 0,
+                ease: "elastic.out(1, 0.5)"
+            });
+            
+            gsap.from('h1', {
+                duration: 1,
+                y: 30,
+                opacity: 0,
+                delay: 0.3,
+                ease: "power3.out"
+            });
+            
+            gsap.from('.subtitle', {
+                duration: 1,
+                y: 30,
+                opacity: 0,
+                delay: 0.5,
+                ease: "power3.out"
+            });
+            
+            gsap.from('.header-contact-item', {
+                duration: 1,
+                y: 30,
+                opacity: 0,
+                delay: 0.7,
+                ease: "power3.out",
+                stagger: 0.1
+            });
+            
+            gsap.from('.scroll-down', {
+                duration: 1,
+                y: 30,
+                opacity: 0,
+                delay: 1,
+                ease: "power3.out"
+            });
+        });
+
+    const tabs = document.querySelectorAll('.tab-btn');
+    const contents = document.querySelectorAll('.tab-content');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            tabs.forEach(btn => btn.classList.remove('active'));
+            contents.forEach(c => c.classList.remove('active'));
+
+            tab.classList.add('active');
+            document.getElementById(tab.dataset.tab).classList.add('active');
+        });
     });
-</script>
+    </script>
 
 </body>
 </html>
