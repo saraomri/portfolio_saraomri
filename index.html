@@ -1,87 +1,180 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sara Omri | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sara Omri | Portfolio</title>
 
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<nav class="navbar">
-  <div class="container nav-content">
-    <h2 class="logo">Sara Omri</h2>
-    <ul class="nav-links">
-      <li><a href="#about">À propos</a></li>
-      <li><a href="#skills">Compétences</a></li>
-      <li><a href="#experience">Expériences</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <button id="themeToggle">🌙</button>
-  </div>
+<!-- ================= NAVBAR ================= -->
+<nav id="mainNav">
+    <div class="nav-container container">
+        <a href="#" class="logo">SARA OMRI</a>
+        <div class="nav-links">
+            <a href="#about">À propos</a>
+            <a href="#skills">Compétences</a>
+            <a href="#experience">Expériences</a>
+            <a href="#education">Formations</a>
+            <a href="#contact">Contact</a>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </div>
 </nav>
 
-<header class="hero">
-  <div class="container hero-content">
-    <img src="img.png" alt="Sara Omri" class="profile-img">
-    <h1>Sara Omri</h1>
-    <p>Développeuse Web Full Stack & Marketeuse Digitale</p>
-  </div>
+<!-- ================= HEADER ================= -->
+<header id="accueil">
+    <div class="container hero-content">
+        <div class="profile-container">
+            <img src="img.png" alt="Sara Omri" class="profile-img">
+        </div>
+
+        <h1>Sara Omri</h1>
+        <p class="subtitle">Développeuse Web Full Stack & Marketeuse Digitale</p>
+
+        <div class="header-contact">
+            <div class="header-contact-item">
+                <i class="fas fa-phone"></i>
+                <span>+212 697 058 819</span>
+            </div>
+            <div class="header-contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>omrisara20031211@gmail.com</span>
+            </div>
+            <div class="header-contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Salé, Maroc</span>
+            </div>
+            <div class="header-contact-item">
+                <i class="fab fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/sara-omri-654a54253/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </div>
 </header>
 
-<section id="about" class="section">
-  <div class="container">
-    <h2>À propos</h2>
+<main class="container">
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+    <div class="section-title">
+        <h2>À propos</h2>
+    </div>
     <p>
-      Développeuse Web Full Stack & Marketeuse Digitale, j’allie compétences techniques
-      et stratégie digitale pour concevoir des solutions performantes, modernes et orientées résultats.
+        Développeuse Web Full Stack & Marketeuse Digitale, j’allie compétences techniques et stratégie digitale
+        pour concevoir des solutions modernes, performantes et orientées résultats.
     </p>
-  </div>
 </section>
 
-<section id="skills" class="section light">
-  <div class="container">
-    <h2>Compétences</h2>
-    <div class="grid">
-      <div class="card">HTML, CSS, JavaScript, React</div>
-      <div class="card">PHP, Laravel, Node.js</div>
-      <div class="card">SEO, Email Marketing, Analytics</div>
-      <div class="card">Git, Docker, Figma</div>
+<!-- ================= SKILLS ================= -->
+<section id="skills">
+    <div class="section-title">
+        <h2>Compétences</h2>
     </div>
-  </div>
-</section>
 
-<section id="experience" class="section">
-  <div class="container">
-    <h2>Expériences</h2>
-    <div class="card">
-      <h3>Community Manager – Lenscape Creative Studio</h3>
-      <p>Gestion de communautés digitales, création de contenus, animation des réseaux sociaux et gestion de sites web.</p>
-      <small>👉 Voir portfolio pour plus de détails</small>
+    <div class="skills-grid">
+        <div class="skill-card">
+            <h3>Développement Web</h3>
+            <ul>
+                <li>HTML5, CSS3, JavaScript</li>
+                <li>React, Next.js</li>
+                <li>PHP, Laravel, Node.js</li>
+                <li>MySQL, MongoDB</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h3>Marketing Digital</h3>
+            <ul>
+                <li>SEO & Analytics</li>
+                <li>Email Marketing</li>
+                <li>Branding & Contenu</li>
+                <li>Social Media</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h3>Outils</h3>
+            <ul>
+                <li>Git & GitHub</li>
+                <li>Docker</li>
+                <li>Figma</li>
+                <li>Google Analytics</li>
+            </ul>
+        </div>
     </div>
-  </div>
 </section>
 
-<section id="contact" class="section light">
-  <div class="container">
-    <h2>Contact</h2>
-    <p>Email : omrisara20031211@gmail.com</p>
-    <p>Téléphone : +212 697 058 819</p>
-    <p>LinkedIn : linkedin.com/in/sara-omri-654a54253</p>
-  </div>
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience">
+    <div class="section-title">
+        <h2>Expériences</h2>
+    </div>
+
+    <div class="experience-item">
+        <h3>Community Manager – Lenscape Creative Studio</h3>
+        <p>
+            Gestion de communautés digitales, création de contenus, animation des réseaux sociaux
+            et gestion de sites web.
+        </p>
+        <small>👉 Voir portfolio pour plus de détails</small>
+    </div>
 </section>
 
+<!-- ================= EDUCATION ================= -->
+<section id="education">
+    <div class="section-title">
+        <h2>Formations</h2>
+    </div>
+
+    <div class="education-item">
+        <h3>Développement Digital – Web Full Stack</h3>
+        <p>Institut Spécialisé de Technologie Appliquée, Salé</p>
+    </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+    <div class="section-title">
+        <h2>Contact</h2>
+    </div>
+
+    <div class="contact-info">
+        <p><strong>Email :</strong> omrisara20031211@gmail.com</p>
+        <p><strong>Téléphone :</strong> +212 697 058 819</p>
+        <p><strong>LinkedIn :</strong> linkedin.com/in/sara-omri-654a54253</p>
+    </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
 <footer>
-  <p>© 2025 Sara Omri — Tous droits réservés</p>
+    <p>© 2025 Sara Omri — Tous droits réservés</p>
 </footer>
 
-<script src="script.js"></script>
+<!-- ================= SCRIPT ================= -->
+<script>
+    const themeToggle = document.getElementById("themeToggle");
+    themeToggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        themeToggle.innerHTML = document.body.classList.contains("dark-mode")
+            ? '<i class="fas fa-sun"></i>'
+            : '<i class="fas fa-moon"></i>';
+    });
+</script>
+
 </body>
 </html>
-
-
